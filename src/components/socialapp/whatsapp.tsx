@@ -22,7 +22,7 @@ const CustomerService = () => {
     } else {
       // WhatsApp is not installed, open WhatsApp Web
       window.open(
-        "https://web.whatsapp.com/send?phone=+9660575645308",
+        "https://wa.me/+9660575645308",
         "_blank"
       );
     }
