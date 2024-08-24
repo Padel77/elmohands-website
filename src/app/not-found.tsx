@@ -7,11 +7,11 @@ export default function NotFound() {
     <>
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full h-screen">
-        <Background
+        {/* <Background
           title={"Page Not Found"}
           className="flex h-full text-center items-center justify-center md:text-7xl text-5xl  italic font-bold max-w-lg mx-auto"
           showButton={false}
-        />
+        /> */}
       </div>
     </>
   );
