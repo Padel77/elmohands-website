@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { AlignJustify } from "lucide-react";
 import { Button } from "../ui/button";
+import UseSearchParamsHook from "@/hooks/UseSearchParamsHook";
 
 const NavItems = [
   {
@@ -69,12 +70,16 @@ const NavItems = [
   },
 ];
 const MobileMenu: React.FC = () => {
+  const { pathname } = UseSearchParamsHook();
+
   const [open, setOpen] = useState(false);
   return (
-    <div className="top-0 left w-full relative">
+    <div className="top-0 right w-full relative">
       <Button
         onClick={() => setOpen(!open)}
-        className="md:hidden fixed top-4 right-4  items-end justify-end p-2    hover:bg-[#F8F8F7]   bg-[#F8F8F7] text-[#2D2D2D] border "
+        className={`md:hidden fixed top-4  ${
+          pathname === "/ar" ? "left-4" : "right-4 "
+        }  items-end justify-end p-2    hover:bg-[#F8F8F7]   bg-[#F8F8F7] text-[#2D2D2D] border `}
       >
         <AlignJustify size={20} />
       </Button>

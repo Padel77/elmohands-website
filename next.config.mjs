@@ -7,7 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "sunchase.backend.aait-d.com",
+        hostname: "assets.aceternity.com",
       },
       {
         protocol: "https",

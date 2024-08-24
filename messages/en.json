@@ -1,5 +1,28 @@
 {
-    "HomePage": {
-      "title": "Home Page"
-    }
+  "HomePage": {
+    "title": "Home Page"
+  },
+  "header": {
+    "home": "Home",
+    "finalwork": "Final Work",
+    "commonQuestion": "Common Questions",
+    "whatbuy": "What to Buy?",
+    "contact": "Contact Us",
+    "arabic": "عربى",
+    "backgroundTitle": "Welcome to the official website of the company",
+    "backgroundDescription": "to buy used furniture in Riyadh",
+    "conectWithUs": "Connect with us",
+    "elmohands": "El Mohandas"
+  },
+  "about": {
+    "aboutUs": "About Us",
+    "aboutElmohandas": "The best company that buys used furniture in Riyadh has extensive experience in acquiring furniture in all regions of Riyadh, so if you want to get rid of old furniture easily and at satisfactory prices, you can contact us",
+    "year2024": "The company has provided the best service for buying used furniture in all regions of Riyadh",
+    "yearTitle": "Year 2024",
+    "yearContent": " The company has provided the best service for buying used furniture in all regions of Riyadh  ",
+    "earlyYearTitle": "Early 2024",
+    "earlyYearsContent": "In a bold step, the company entered the market for used equipment in Riyadh in an unprecedented step, El Mohandas Company, one of the leading companies in the field of furniture",
+    "Changelog": "Changelog"
+      
   }
+}

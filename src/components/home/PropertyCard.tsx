@@ -1,98 +1,153 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import group5 from "@../../../public/assets/home/Group5.svg";
-import Frame1 from "@../../../public/assets/home/Group.svg";
-import Frame2 from "@../../../public/assets/home/Frame (1).svg";
-import Frame3 from "@../../../public/assets/home/Frame (2).svg";
-import Frame4 from "@../../../public/assets/home/Frame.svg";
-import { ArrowUpRight } from "lucide-react";
-import { WeHelpYouProps } from "@/lib/types";
+import { Timeline } from "@/components/ui/timeline";
+import { useTranslations } from "next-intl";
 
-const PropertyCard: React.FC<WeHelpYouProps> = ({ weHelpYou }) => {
+export function TimelineDemo() {
+  const t = useTranslations("about");
+  const data = [
+    {
+      title: t("yearTitle"),
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            {t("yearContent")}{" "}
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="https://assets.aceternity.com/templates/startup-1.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/templates/startup-2.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/templates/startup-3.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/templates/startup-4.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: t("earlyYearTitle"),
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            {t("earlyYearsContent")}
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/features-section.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/pro/bento-grids.png"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/cards.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: t("Changelog"),
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            Deployed 5 new components on Aceternity today
+          </p>
+          <div className="mb-8">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Card grid component
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Startup template Aceternity
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Random file upload lol
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Himesh Reshammiya Music CD
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Salman Bhai Fan Club registrations open
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/features-section.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/pro/bento-grids.png"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://assets.aceternity.com/cards.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+        </div>
+      ),
+    },
+  ];
   return (
-    <div className="  justify-center md:my-12 my-6  overflow-hidden">
-      <div className="flex flex-col items-center gap-4 md:flex-row  ">
-        <div className="md:w-1/2 flex md:justify-end">
-          <Image
-            src={weHelpYou?.main?.image || group5}
-            width={300}
-            height={300}
-            alt="Property"
-            className="w-[90%] h-[70%] object-cover"
-            sizes="100%"
-            loading="lazy"
-          />
-        </div>
-        <div className="p-6 md:w-1/2  ">
-          <h2 className="text-4xl font-bold mb-2 max-w-lg">
-            {weHelpYou?.main?.title}
-          </h2>
-          <p className="text-gray-700  my-4 max-w-lg">
-            Donec bibendum nibh quis nisl luctus, at aliquet ipsum bibendum.
-            Fusce at dui tincidunt nulla semper venenatis at et magna. Mauris
-            turpis lorem, ultricies vel justo sed, ultrices auctor nisi.
-          </p>
-          <p className="text-gray-700 mb-4 max-w-lg">
-            Donec bibendum nibh quis nisl luctus, at aliquet ipsum bibendum.
-            Fusce at dui tincidunt nulla semper.
-          </p>
-          <button className="bg-[#2D2D2D] text-white px-4 flex py-2 rounded">
-            Read More <ArrowUpRight size={16} />
-          </button>
-        </div>
-      </div>
-      <div className=" flex flex-col sm:flex-row items-center justify-evenly my-8 text-xs gap-4		  ">
-        <div className="flex text-sm flex-col items-center gap-3">
-          <Image
-            width={100}
-            height={100}
-            src={weHelpYou?.icons?.icon_1.icon || Frame1}
-            alt="Property"
-            className="w-6 h-6"
-            sizes="100%"
-            loading="lazy"
-          />
-          <span>{weHelpYou?.icons?.icon_1.text}</span>
-        </div>
-        <div className="flex flex-col items-center gap-3">
-          <Image
-            width={100}
-            height={100}
-            src={weHelpYou?.icons?.icon_2.icon || Frame2}
-            alt="Property"
-            className="w-6 h-6"
-            sizes="100%"
-            loading="lazy"
-          />
-          <span>{weHelpYou?.icons?.icon_2.text}</span>
-        </div>
-        <div className="flex flex-col items-center gap-3">
-          <Image
-            width={100}
-            height={100}
-            src={weHelpYou?.icons?.icon_3.icon || Frame3}
-            alt="Property"
-            className="w-6 h-6"
-            sizes="100%"
-            loading="lazy"
-          />
-          <span>{weHelpYou?.icons?.icon_3.text}</span>
-        </div>
-        <div className="flex flex-col items-center gap-3">
-          <Image
-            width={100}
-            height={100}
-            src={weHelpYou?.icons?.icon_4.icon || Frame4}
-            alt="Property"
-            className="w-6 h-6"
-            sizes="100%"
-            loading="lazy"
-          />
-          <span>{weHelpYou?.icons?.icon_4.text}</span>
-        </div>
-      </div>
+    <div id="about" className="w-full">
+      <Timeline data={data} />
     </div>
   );
-};
-
-export default PropertyCard;
+}

@@ -1,52 +1,29 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@../../../public/assets/Vector.svg";
+import Logo from "@../../../public/assets/elmohands__1.png";
+import Logo2 from "@../../../public/assets/elmohands__2.png";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import NavLogo from "../header/NavLogo";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" bg-[#F3F3F1]">
+    <footer
+      id="contact"
+      className=" bg-[#F3F3F1] inset-0 bg-gradient-to-b from-black to-transparent text-light"
+    >
       <div className="container px-4">
-        {/* Subscription Section */}
-        <div className="flex w-full justify-center">
-          <div className="flex flex-col md:flex-row py-12 md:justify-between border-b border-[#3E453E] w-[90%] md:w-[80%]">
-            <div className="flex flex-col  mb-2 md:mb-0 gap-2">
-              <h1 className="text-4xl font-[900]  md:mb-0 md:mr-4">
-                Subscribe to newsletter
-              </h1>
-              <p className="text-gray-600 text-sm">
-                Sign up to receive the latest news
-              </p>
-            </div>
-            <form className="flex flex-col md:flex-row md:items-center text-xl">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="p-2 w-fit rounded-l-md focus:outline-none focus:border-gray-500"
-              />
-              <button
-                type="submit"
-                className="bg-gray-800 text-white px-4 py-2 rounded-r-md hover:bg-gray-700"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-
         {/* Main Content */}
-        <div className="flex w-full justify-center">
-          <div className="flex flex-col md:flex-row md:justify-between py-12 border-b border-[#3E453E] w-[90%] md:w-[80%]">
+        <div className=" flex w-full justify-center ">
+          <div className="flex flex-col md:flex-row  md:justify-between py-12 border-b border-[#3E453E] w-[90%] md:w-[80%]">
             {/* Logo and Description */}
             <div className="mb-4 md:mb-0 flex flex-col gap-4">
               <Link href="/">
-                <Image src={Logo} alt="Logo" />
+                <NavLogo />
               </Link>
               <p className="text-wrap break-words max-w-xl">
                 Donec liberorum nibh euis rutrum sit luctus, at aliquet quam
-                bibendum.
-                Fusce at dui tincidunt nulla tempor.
+                bibendum. Fusce at dui tincidunt nulla tempor.
               </p>
               <div className="flex text-sm space-x-4">
                 <p className="text-[#8D999D]">Follow us on</p>

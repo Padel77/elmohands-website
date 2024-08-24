@@ -15,16 +15,12 @@ const CustomerService = () => {
   };
 
   const handleWhatsappClick = () => {
-    console.log("WhatsApp clicked");
     if (navigator.userAgent.includes("WhatsApp")) {
       // WhatsApp is installed
-      window.open(`whatsapp://send?phone=+9660575645308`);
+      window.open(`whatsapp://send?phone=9660575645308`);
     } else {
       // WhatsApp is not installed, open WhatsApp Web
-      window.open(
-        "https://wa.me/+9660575645308",
-        "_blank"
-      );
+      window.open("https://wa.me/9660575645308", "_blank");
     }
   };
 
@@ -54,7 +50,7 @@ const CustomerService = () => {
         className={`bg-red-400 hover:bg-red-500 w-min p-2 rounded-full fixed 
           bottom-10 ${
             pathname === "/ar" ? "right-4" : "left-4"
-          } cursor-pointer md:right-8 transition  ease-in-out  focus:shadow-lg ${
+          } cursor-pointer md:right-8 transition duration-400 ease-out hover:ease-in   ease-in-out  focus:shadow-lg ${
           showIcons ? "rotate-45" : "rotate-0"
         } z-50`}
         onClick={handleClick}
@@ -68,7 +64,7 @@ const CustomerService = () => {
         <div
           className={`fixed bottom-20 ${
             pathname === "/ar" ? "right-4" : "left-4"
-          } flex flex-col space-y-2 transition-opacity duration-500 ease-in-out opacity-100 z-50`}
+          } flex flex-col space-y-2   z-50`}
         >
           <div
             className="bg-green-600 p-2 rounded-full cursor-pointer"
