@@ -10,13 +10,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-} from "@radix-ui/react-dropdown-menu";
-import UseSearchParamsHook from "@/hooks/UseSearchParamsHook";
-import { handleLogOut } from "@/lib/action";
 
 interface Organization {
   id: string;
@@ -39,15 +32,11 @@ export default function ProfileDropDown({
   image,
 }: ProfileDropDownProps) {
   //-------------- Public Functions -------------------
-  function handleLogOuts() {
-    handleLogOut();
-    deleteCookie("token");
-  }
 
   if (loading) {
     return null;
   }
-  
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
@@ -65,11 +54,7 @@ export default function ProfileDropDown({
             Profile
           </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem className="hover:bg-slate-100 w-full rounded-sm py-2 text-blue-800">
-          <button onClick={handleLogOuts} className="">
-            Log Out
-          </button>
-        </DropdownMenuItem>
+        <DropdownMenuItem className="hover:bg-slate-100 w-full rounded-sm py-2 text-blue-800"></DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

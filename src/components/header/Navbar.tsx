@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import MobileMenu from "./MobileMenu";
-import { GetDataInServerSide } from "@/lib/action";
 import ProfileDropDown from "./ProfileDropDown";
 import GlobalLanguage from "./GolablLanguage";
 import NavLogo from "./NavLogo";
