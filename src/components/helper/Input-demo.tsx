@@ -1,8 +1,6 @@
-'use client';
+"use client";
 
 import { useState, ChangeEvent, FC } from "react";
-
-import { handleKeyDown, handleWheel } from "@/lib/utils";
 
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -10,22 +8,20 @@ import { Input } from "@/components/ui/input";
 import { Eye, EyeOff } from "lucide-react";
 import { InputDemoProps } from "@/lib/types";
 
-
-
 const InputDemo: FC<InputDemoProps> = ({
   id,
   label,
-  style = '',
-  inputStyle = '',
-  type = 'text',
-  placeHolder = '',
+  style = "",
+  inputStyle = "",
+  type = "text",
+  placeHolder = "",
   disabled = false,
   value,
   onChange,
-  error = '',
-  selectValue = '',
+  error = "",
+  selectValue = "",
   selectItem = [],
-  defaultValue = '',
+  defaultValue = "",
   icon = null,
 }) => {
   const [isPassword, setIsPassword] = useState(false);
@@ -37,7 +33,12 @@ const InputDemo: FC<InputDemoProps> = ({
   return (
     <div className={`grid grid-cols-1 w-full ${style} items-center gap-1`}>
       {label && (
-        <Label htmlFor={id} className={`flex items-center gap-2 text-[16px] font-medium cursor-pointer w-fit ${error ? 'text-red-800' : 'text-gray-500'}`}>
+        <Label
+          htmlFor={id}
+          className={`flex items-center gap-2 text-[16px] font-medium cursor-pointer w-fit ${
+            error ? "text-red-800" : "text-gray-500"
+          }`}
+        >
           {icon}
           <p>{label}</p>
         </Label>
@@ -46,17 +47,21 @@ const InputDemo: FC<InputDemoProps> = ({
         <Input
           type={type}
           id={id}
-          className={`outline-0 bg-secondary ${error ? 'border border-red-800' : 'border-0'} focus-visible:ring-0 focus-visible:ring-offset-0 ${disabled ? 'bg-gray-300' : ''} ${inputStyle} rounded-none`}
+          className={`outline-0 bg-secondary ${
+            error ? "border border-red-800" : "border-0"
+          } focus-visible:ring-0 focus-visible:ring-offset-0 ${
+            disabled ? "bg-gray-300" : ""
+          } ${inputStyle} rounded-none`}
           placeholder={placeHolder}
-          onKeyDown={handleKeyDown}
-          onWheel={handleWheel}
           value={value}
           onChange={onChange}
           disabled={disabled}
           name={id}
-          min={type === 'date' ? new Date().toISOString().split('T')[0] : undefined}
+          min={
+            type === "date" ? new Date().toISOString().split("T")[0] : undefined
+          }
         />
-        {type === 'password' && (
+        {type === "password" && (
           <div className="absolute right-2 top-2 cursor-pointer z-40">
             {isPassword ? (
               <EyeOff onClick={handleTogglePasswordVisibility} size={20} />
