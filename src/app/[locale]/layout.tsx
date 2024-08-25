@@ -4,8 +4,7 @@ import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { getTranslations } from "next-intl/server";
-
+import { Analytics } from "@vercel/analytics/react"
 const inter = Tajawal({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -32,6 +31,7 @@ export default async function LocaleLayout({
 
   return (
     <html dir={locale === "ar" ? "rtl" : "ltr"} lang={locale}>
+      <Analytics/>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
