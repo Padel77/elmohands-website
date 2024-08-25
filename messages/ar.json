@@ -27,5 +27,18 @@
     "earlyYearsContent" : "في خطوة جريئة تقتحم شركة المهندس سوق المعدات المستعملة في الرياض في خطوة غير مسبوقة، أعلنت شركة المهندس، إحدى الشركات الرائدة في مجال الأثاث  ",
     "changeEarlyYear": "تغيير السنوات ",
     "Changelog": "سجل التغييرات"
-  }
+  },
+  "adversting": {
+    "adverstingTitle": "اعلانات",
+    "adverstingContent": "تواصل معنا وبدل عفشك القديم بعفش جديد وبيع عفشك بأفضل الأسعار",
+    "adverstingButton": "اشتري الان",
+    "conectWithUs": "تواصل معنا"
+  },
+  "contact": {
+    "contactUs": "تواصل معنا",
+    "contactDescription": "للتواصل معنا يمكنك الاتصال بنا على الرقم التالي",
+    "contactNumber": "055 555 5555",
+    "contactEmail": "elmohandas@orgniz.com",
+    "contactAddress": "الرياض - حي النسيم - شارع النسيم"
+}
 }

@@ -20,9 +20,9 @@ export const NavLink: React.FC = () => {
     },
     {
       id: 2,
-      name: t("finalwork"),
-      href: "#about",
-      activeLink: "about",
+      name: t("whatbuy"),
+      href: "#hoverEffect",
+      activeLink: "hoverEffect",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ export const NavLink: React.FC = () => {
 
     {
       id: 4,
-      name: t("whatbuy"),
+      name: t("finalwork"),
       href: "#about",
       activeLink: "about",
     },
@@ -55,12 +55,12 @@ export const NavLink: React.FC = () => {
   const renderLinks = (links: NavLinkItem[]) => {
     return links.map((link) => (
       <div key={link.id} className="relative group">
-        <div className="flex items-center hover:text-xl hover:ease-linear	 transition duration-300 delay-150 hover:delay-300">
+        <div className="flex items-center hover:text-xl hover:ease-linear transition duration-800 delay-150 hover:delay-300">
           <Link
             href={link.href}
-            className={`text-white  rounded-md flex items-center relative transition duration-300 ease-linear hover:text-primary `}
+            className={`text-white rounded-md flex items-center relative transition duration-400 ease-linear hover:font-black hover:text-blue-200 `}
           >
-            <p className="font-[400] flex items-center   gap-8 ">
+            <p className="font-[400] flex items-center gap-8 ">
               {link.name}
               {link.children && <ChevronDown strokeWidth={1} size={16} />}
             </p>

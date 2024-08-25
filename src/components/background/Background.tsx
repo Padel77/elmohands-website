@@ -13,7 +13,7 @@ export const Background: React.FC = () => {
   const t = useTranslations("header");
 
   return (
-    <div className="w-full bg-[url('../../../public/assets/background.png')] bg-gradient-* relative h-screen bg-fit bg-fixed bg-center text-white">
+    <div className="w-full bg-[url('../../../public/assets/background.png')] bg-gradient-* relative h-screen bg-fit text-white">
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div>
       <span 
@@ -37,7 +37,7 @@ export const Background: React.FC = () => {
             <div className="z-50  text-lg text-white">
               <p>{t("backgroundTitle")}</p>
               <h1 className="leading-loose  md:text-5xl text-3xl my-4  text-red-300  font-bold ">
-                <Highlight className="text-black dark:text-white ">
+                <Highlight className="text-black dark:text-white px-2 ">
                 <span className="text-white font-black">{t("elmohands")} </span>{t("backgroundDescription")}
                 </Highlight>
               </h1>
@@ -45,7 +45,7 @@ export const Background: React.FC = () => {
           </motion.h1>
         <Link
           href="tel:+9660575645308"
-          className="absolute  flex items-center justify-center rounded-md  md:my-6 gap-2 top-2/3 p-3 text-sm mx-auto bg-[#F8F8F7] text-orange-950	 border"
+          className="absolute  flex items-center justify-center rounded-md z-50 md:my-6 gap-2 top-2/3 p-3 text-md mx-auto  opacity-100 	drop-shadow-2xl text-blue"
         >
           {t("conectWithUs")}
           <PhoneCall className="animate-ping" size={16} />
