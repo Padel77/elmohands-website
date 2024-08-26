@@ -9,39 +9,39 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "معدات المطاعم",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "نشتري فى الأسيوطي معدات المطاعم بأفضل الأسعار",
     link: "https://stripe.com",
   },
   {
-    title: "Netflix",
+    title: "الأجهزة الكهربائية",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "نشتري الأجهزة الكهربائية بأفضل الأسعار",
     link: "https://netflix.com",
   },
   {
-    title: "Google",
+    title: "مطابخ",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "نشتري في الأسيوطي المطابخ المستعملة بأفضل الأسعار",
     link: "https://google.com",
   },
   {
-    title: "Meta",
+    title: "غرف نوم",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "نشتري غرف النوم بأسعار مناسبة",
     link: "https://meta.com",
   },
   {
-    title: "Amazon",
+    title: "مجالس",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "شراء المجالس المستعملة بالأسيوطي بأفضل الأسعار",
     link: "https://amazon.com",
   },
   {
-    title: "Microsoft",
+    title: "كراسي",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      "شراء الكراسي المستعملة بالسعر المناسب",
     link: "https://microsoft.com",
   },
 ];
