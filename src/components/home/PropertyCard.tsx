@@ -91,24 +91,24 @@ export function TimelineDemo() {
       title: t("Changelog"),
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-bold mb-4">
+            {t("morelastWork")}
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
+              ✅ {t("morelastWorkcontent")}
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
+            ✅ {t("morelastWorkcontent2")}
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
+            ✅ {t("morelastWorkcontent3")}
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
+            ✅ {t("morelastWorkcontent4")}
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
+            ✅ {t("morelastWorkcontent5")}
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">

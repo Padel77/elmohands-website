@@ -5,8 +5,8 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/react";
-import Navbar from "@/components/header/Navbar";
-import Footer from "@/components/footer/Footer";
+import Head from 'next/head';
+
 const inter = Tajawal({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -16,8 +16,9 @@ const inter = Tajawal({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | المهندس ",
-    default: "أفضل الأسعار والخدمات في المملكة| المهندس لشراء الأثاث المستعمل",
+    template: "%s |  المهندس لشراء الأثاث المستعمل ",
+    default:
+      " المهندس لشراء الأثاث المستعمل | المهندس أفضل الأسعار والخدمات في  شراء الاثاث فى المملكة",
   },
   description:
     "نحن في المهندس نقدم خدمات شراء الأثاث المستعمل بأفضل الأسعار في المملكة. احصل على تقييم مجاني وسريع لأثاثك المستعمل الآن. اتصل بنا لتحقيق أفضل قيمة لأثاثك القديم.",
@@ -36,7 +37,12 @@ export default async function LocaleLayout({
 
   return (
     <html dir={locale === "ar" ? "rtl" : "ltr"} lang={locale}>
+      <Head>
+        <title>المهندس</title>
+        <link rel="icon" href="../favicon.ico" />
+      </Head>
       <body className={inter.className}>
+        
         <NextIntlClientProvider messages={messages}>
           {children}
           <Analytics />
