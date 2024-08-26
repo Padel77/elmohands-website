@@ -23,22 +23,22 @@ export const NavLink: React.FC = () => {
     },
     {
       id: 2,
-      name: t("whatbuy"),
-      href: "#hoverEffect",
-      activeLink: "hoverEffect",
+      name: t("finalwork"),
+      href: `#about`,
+      activeLink: "about",
     },
     {
       id: 3,
-      name: t("commonQuestion"),
-      href: "#services",
-      activeLink: "services",
+      name: t("whatbuy"),
+      href: "#hoverEffect",
+      activeLink: "hoverEffect"
     },
 
     {
       id: 4,
-      name: t("finalwork"),
-      href: `/${language}/about`,
-      activeLink: "about",
+      name: t("commonQuestion"),
+      href: "#services",
+      activeLink: "services",
     },
     {
       id: 5,

@@ -6,8 +6,11 @@ import {
   useTransform,
   motion,
 } from "framer-motion";
+import { PhoneCall } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa6";
 
 interface TimelineEntry {
   title: string;
@@ -47,6 +50,27 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <p className="text-neutral-900 dark:text-neutral-300 text-md md:text-base max-w-md">
           {t("aboutElmohandas")}
         </p>
+        <div className="flex items-center py-2 gap-4">
+          <div>
+            <Link
+              href="tel:+966575645308"
+              className="  flex items-center justify-center gap-2 bg-gray-600 rounded-sm text-light font-bold p-2 "
+            >
+              {t("contactNumber")}
+              <PhoneCall className="animate-ping" size={14} />
+            </Link>
+          </div>
+          <div>
+            <Link
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=966575645308&text&type=phone_number&app_absent=0"
+              className="flex items-center justify-center gap-2 bg-gray-600 rounded-sm text-light font-bold p-2"
+            >
+              {t("whatsapp")}
+              <FaWhatsapp className="animate-ping" size={14} />
+            </Link>{" "}
+          </div>
+        </div>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

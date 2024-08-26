@@ -5,21 +5,19 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const GlobalLanguage: React.FC = () => {
+export const GlobalLanguage: React.FC<{ className: string }> = ({
+  className,
+}) => {
   const { pathname, router } = UseSearchParamsHook();
   const route = pathname.split("/")[2];
 
-  const t = useTranslations("header");
   const changeLanguage = () => {
-    {
-      /* Change this to the desired path */
-    }
-    router.push(pathname === `/ar/${route}` ? `/en/${route}` : `/ar/${route}`);
+    router.push(pathname === `/ar` ? `/en` : `/ar`);
   };
 
   return (
     <div>
-      <button onClick={changeLanguage} className="flex text-white">
+      <button onClick={changeLanguage} className={`${className} text-white`}>
         {pathname === "/ar" ? (
           <span className="flex items-center">
             {" "}
@@ -37,5 +35,3 @@ const GlobalLanguage: React.FC = () => {
     </div>
   );
 };
-
-export default GlobalLanguage;

@@ -1,8 +1,6 @@
 import Link from "next/link";
-
 import MobileMenu from "./MobileMenu";
-import ProfileDropDown from "./ProfileDropDown";
-import GlobalLanguage from "./GolablLanguage";
+import { GlobalLanguage } from "./GolablLanguage";
 import NavLogo from "./NavLogo";
 import { NavLink } from "./NavLink";
 
@@ -17,10 +15,10 @@ export default async function Navbar() {
           <NavLink />
           <div>
             {/* Mobile Menu */}
-            {/* <MobileMenu /> */}
+            <MobileMenu />
             {/* Mobile Menu */}
           </div>
-          <GlobalLanguage />
+          <GlobalLanguage className="hidden lg:flex" />
         </div>
       </nav>
     </div>

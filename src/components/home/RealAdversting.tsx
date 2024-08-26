@@ -34,7 +34,7 @@ const RealAdversting: React.FC = () => {
               onClick={handleCallClick}
               className="flex items-center mt-4 px-2 py-2 gap-2 bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
             >
-              {t("conectWithUs")}
+              {t("contactNumber")}
               <span className="ml-2">
                 <PhoneCall className="animate-ping" size={14} />
               </span>

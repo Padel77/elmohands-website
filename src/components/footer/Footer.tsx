@@ -68,13 +68,13 @@ const Footer: React.FC = async () => {
                     <Link href="/">{t("Home")}</Link>
                   </li>
                   <li>
-                    <Link href="/projects">{t("FinalWork")}</Link>
+                    <Link href="#projects">{t("FinalWork")}</Link>
                   </li>
                   <li>
-                    <Link href="/services">{t("CommonQuestions")}</Link>
+                    <Link href="#about">{t("CommonQuestions")}</Link>
                   </li>
                   <li>
-                    <Link href="/contact">{t("WhatToBuy")}</Link>
+                    <Link href="#contact">{t("WhatToBuy")}</Link>
                   </li>
                 </ul>
               </div>
