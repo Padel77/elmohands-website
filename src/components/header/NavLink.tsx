@@ -11,6 +11,9 @@ import { useTranslations } from "next-intl";
 export const NavLink: React.FC = () => {
   const t = useTranslations("header");
   const { pathname } = UseSearchParamsHook();
+
+  const language = pathname.split("/")[1];
+
   const links = [
     {
       id: 1,
@@ -34,7 +37,7 @@ export const NavLink: React.FC = () => {
     {
       id: 4,
       name: t("finalwork"),
-      href: "#about",
+      href: `/${language}/about`,
       activeLink: "about",
     },
     {

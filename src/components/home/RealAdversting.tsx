@@ -39,7 +39,10 @@ const RealAdversting: React.FC = () => {
                 <PhoneCall className="animate-ping" size={14} />
               </span>
             </button>
-            <button onClick={handleWhatsappClick} className="flex items-center mt-4 px-2 text-center bg-[#2D2D2D] text-white rounded hover:bg-blue-600">
+            <button
+              onClick={handleWhatsappClick}
+              className="flex items-center mt-4 px-2 text-center bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
+            >
               <FaWhatsapp size={18} />
             </button>
           </div>

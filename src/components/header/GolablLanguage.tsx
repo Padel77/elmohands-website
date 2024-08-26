@@ -7,12 +7,14 @@ import React from "react";
 
 const GlobalLanguage: React.FC = () => {
   const { pathname, router } = UseSearchParamsHook();
+  const route = pathname.split("/")[2];
+
   const t = useTranslations("header");
   const changeLanguage = () => {
     {
       /* Change this to the desired path */
     }
-    router.push(pathname === "/ar" ? "/en" : "/ar");
+    router.push(pathname === `/ar/${route}` ? `/en/${route}` : `/ar/${route}`);
   };
 
   return (
@@ -21,7 +23,8 @@ const GlobalLanguage: React.FC = () => {
         {pathname === "/ar" ? (
           <span className="flex items-center">
             {" "}
-             <Globe size={20} strokeWidth={1} />En
+            <Globe size={20} strokeWidth={1} />
+            En
           </span>
         ) : (
           <span className="flex items-center">

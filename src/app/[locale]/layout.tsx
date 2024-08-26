@@ -5,6 +5,8 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/react";
+import Navbar from "@/components/header/Navbar";
+import Footer from "@/components/footer/Footer";
 const inter = Tajawal({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -13,7 +15,10 @@ const inter = Tajawal({
 });
 
 export const metadata: Metadata = {
-  title: "المهندس لشراء الأثاث المستعمل - أفضل الأسعار والخدمات في المملكة",
+  title: {
+    template: "%s | المهندس ",
+    default: "أفضل الأسعار والخدمات في المملكة| المهندس لشراء الأثاث المستعمل",
+  },
   description:
     "نحن في المهندس نقدم خدمات شراء الأثاث المستعمل بأفضل الأسعار في المملكة. احصل على تقييم مجاني وسريع لأثاثك المستعمل الآن. اتصل بنا لتحقيق أفضل قيمة لأثاثك القديم.",
   verification: {
