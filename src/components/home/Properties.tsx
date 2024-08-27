@@ -11,37 +11,37 @@ export const projects = [
   {
     title: "معدات المطاعم",
     description:
-      "نشتري فى الأسيوطي معدات المطاعم بأفضل الأسعار",
-    link: "https://stripe.com",
+      "نشتري فى المهندس معدات المطاعم بأفضل الأسعار",
+    link: "#",
   },
   {
     title: "الأجهزة الكهربائية",
     description:
       "نشتري الأجهزة الكهربائية بأفضل الأسعار",
-    link: "https://netflix.com",
+    link: "#",
   },
   {
     title: "مطابخ",
     description:
-      "نشتري في الأسيوطي المطابخ المستعملة بأفضل الأسعار",
-    link: "https://google.com",
+      "نشتري في المهندس المطابخ المستعملة بأفضل الأسعار",
+    link: "#",
   },
   {
     title: "غرف نوم",
     description:
       "نشتري غرف النوم بأسعار مناسبة",
-    link: "https://meta.com",
+    link: "#",
   },
   {
     title: "مجالس",
     description:
-      "شراء المجالس المستعملة بالأسيوطي بأفضل الأسعار",
-    link: "https://amazon.com",
+      "شراء المجالس المستعملة بالمهندس بأفضل الأسعار",
+    link: "#",
   },
   {
     title: "كراسي",
     description:
       "شراء الكراسي المستعملة بالسعر المناسب",
-    link: "https://microsoft.com",
+    link: "#",
   },
 ];

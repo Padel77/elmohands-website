@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import UseSearchParamsHook from "@/hooks/UseSearchParamsHook";
 export function AppleCardsCarouselDemo() {
   const t = useTranslations("howtobuy");
-  const { pathname } = UseSearchParamsHook()
+  const { pathname } = UseSearchParamsHook();
 
   const data = [
     {
@@ -28,15 +28,13 @@ export function AppleCardsCarouselDemo() {
       src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       content: <DummyContent />,
     },
-   
+
     {
       category: t("buyproduct"),
       title: t("buyproductContent"),
       src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       content: <DummyContent />,
     },
-
-   
   ];
 
   const cards = data.map((card, index) => (
@@ -45,7 +43,11 @@ export function AppleCardsCarouselDemo() {
 
   return (
     <div id="services" className="w-full h-full py-20">
-      <h2 className={`max-w-7xl ${pathname === "/ar" ? "pl-4" : "pr-4"} mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans`}>
+      <h2
+        className={`max-w-7xl ${
+          pathname === "/ar" ? "pl-4" : "pr-4"
+        } mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans`}
+      >
         {t("howtobuyTitle")}
       </h2>
       <Carousel items={cards} />

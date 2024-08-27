@@ -11,7 +11,7 @@ export function TimelineDemo() {
       title: t("yearTitle"),
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-bold  mb-8">
             {t("yearContent")}{" "}
           </p>
           
@@ -52,7 +52,7 @@ export function TimelineDemo() {
       title: t("earlyYearTitle"),
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-6">
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-bold mb-6">
             {t("earlyYearsContent")}
           </p>
           
@@ -93,23 +93,23 @@ export function TimelineDemo() {
       title: t("Changelog"),
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-bold mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-sm font-bold mb-4">
             {t("morelastWork")}
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               ✅ {t("morelastWorkcontent")}
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
             ✅ {t("morelastWorkcontent2")}
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
             ✅ {t("morelastWorkcontent3")}
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
             ✅ {t("morelastWorkcontent4")}
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
             ✅ {t("morelastWorkcontent5")}
             </div>
           </div>

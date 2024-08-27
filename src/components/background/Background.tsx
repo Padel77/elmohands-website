@@ -44,7 +44,7 @@ export const Background: React.FC = () => {
         </motion.h1>
         <Link
           href="tel:+9660575645308"
-          className="absolute  flex items-center justify-center rounded-md z-50 md:my-6 gap-2 top-2/3 p-3 text-lg mx-auto  opacity-100 	drop-shadow-2xl text-blue"
+          className="absolute  flex items-center justify-center rounded-md z-50 md:my-6 gap-2 top-2/3 p-3 text-xl mx-auto  opacity-100 	drop-shadow-2xl font-black  text-blue"
         >
           {t("conectWithUs")}
           <PhoneCall className="animate-ping" size={16} />

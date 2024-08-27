@@ -4,23 +4,23 @@ import React, { useState, useEffect } from "react";
 import { FaWhatsapp, FaPhone } from "react-icons/fa6";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { IoIosArrowUp } from "react-icons/io";
+import { useTranslations } from "next-intl";
 
 const CustomerService = () => {
   const { pathname } = UseSearchParamsHook();
   const [showIcons, setShowIcons] = useState(false);
   const [showScrollUp, setShowScrollUp] = useState(false);
-
-  const handleClick = () => {
-    setShowIcons(!showIcons);
-  };
-
+  const t = useTranslations("header");
   const handleWhatsappClick = () => {
     if (navigator.userAgent.includes("WhatsApp")) {
       // WhatsApp is installed
       window.open(`whatsapp://send?phone=966575645308`);
     } else {
       // WhatsApp is not installed, open WhatsApp Web
-      window.open("https://api.whatsapp.com/send/?phone=966575645308&text&type=phone_number&app_absent=0", "_blank");
+      window.open(
+        "https://api.whatsapp.com/send/?phone=966575645308&text&type=phone_number&app_absent=0",
+        "_blank"
+      );
     }
   };
 
@@ -47,48 +47,44 @@ const CustomerService = () => {
   return (
     <>
       <div
-        className={`bg-red-400 hover:bg-red-500 w-min p-2 rounded-full fixed 
+        className={`bg-[#128C7E] hover:bg-[#25D366] w-min p-2 rounded-full fixed 
           bottom-10 ${
             pathname === "/ar" ? "right-4" : "left-4"
-          } cursor-pointer md:right-8 transition duration-400 ease-out hover:ease-in   ease-in-out  focus:shadow-lg ${
-          showIcons ? "rotate-45" : "rotate-0"
-        } z-50`}
-        onClick={handleClick}
+          } cursor-pointer md:right-8 transition duration-400 ease-out hover:ease-in   ease-in-out  focus:shadow-lg z-50`}
+        onClick={handleWhatsappClick}
       >
-        <RiCustomerService2Fill
-          color="white"
-          className=" w-7 h-7 md:w-10 md:h-10"
-        />
+        <FaWhatsapp color="white" className=" w-7 h-7 md:w-10 md:h-10" />
       </div>
-      {showIcons && (
-        <div
-          className={`fixed bottom-20 ${
+      <div
+        className={`bg-[#128C7E] hover:bg-[#25D366] w-min p-2 rounded-full fixed 
+          bottom-10 ${
             pathname === "/ar" ? "right-4" : "left-4"
-          } flex flex-col space-y-2   z-50`}
-        >
+          } cursor-pointer md:right-8 transition duration-400 ease-out hover:ease-in   ease-in-out  focus:shadow-lg z-50`}
+        onClick={handleWhatsappClick}
+      >
+        <FaWhatsapp color="white" className=" w-7 h-7 md:w-10 md:h-10" />
+      </div>
+
+      {showScrollUp && (
+        <>
           <div
-            className="bg-green-600 p-2 rounded-full cursor-pointer"
-            onClick={handleWhatsappClick}
+            className={`${
+              pathname === "/ar" ? "left-4 " : "right-4"
+            } bg-black w-min p-1 rounded-full fixed bottom-20  cursor-pointer z-50`}
+            onClick={handleScrollUpClick}
           >
-            <FaWhatsapp color="white" className="w-4 h-4 md:w-5 md:h-5" />
+            <IoIosArrowUp color="white" className="w-5 h-5 md:w-8 md:h-8" />
           </div>
           <div
-            className="bg-blue-600 p-2 rounded-full cursor-pointer"
+            className={`flex gap-4 text-white font-bold bg-[#075E54] p-3 rounded-full cursor-pointer fixed bottom-7 ${
+              pathname === "/ar" ? "left-4" : "right-4"
+            } z-50`}
             onClick={handleCallClick}
           >
-            <FaPhone color="white" className="w-4 h-4 md:w-5 md:h-5" />
+            <FaPhone color="white" className="w-5 h-5 md:w-5 md:h-5" />
+            {t("conectWithUs")}
           </div>
-        </div>
-      )}
-      {showScrollUp && (
-        <div
-          className={`${
-            pathname === "/ar" ? "left-4 " : "right-4"
-          } bg-black w-min p-2 rounded-full fixed bottom-10  cursor-pointer z-50`}
-          onClick={handleScrollUpClick}
-        >
-          <IoIosArrowUp color="white" className="w-5 h-5 md:w-8 md:h-10" />
-        </div>
+        </>
       )}
     </>
   );

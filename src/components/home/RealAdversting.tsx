@@ -32,7 +32,7 @@ const RealAdversting: React.FC = () => {
           <div className="flex gap-4">
             <button
               onClick={handleCallClick}
-              className="flex items-center mt-4 px-2 py-2 gap-2 bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
+              className="flex items-center mt-4 px-2 py-2 gap-2 font-bold bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
             >
               {t("contactNumber")}
               <span className="ml-2">
