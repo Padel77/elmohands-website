@@ -4,6 +4,14 @@ import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { useTranslations } from "next-intl";
 import logo from "@../../../public/assets/furnture.png";
+import logo2 from "@../../../public/assets/furnture2.png";
+import logo3 from "@../../../public/assets/furnture4.jpg";
+import logo4 from "@../../../public/assets/furnture5.jpg";
+import logo5 from "@../../../public/assets/furnture6.jpg";
+import logo6 from "@../../../public/assets/furnture7.jpg";
+import logo7 from "@../../../public/assets/furnture8.jpg";
+import logo8 from "@../../../public/assets/furnture9.jpg";
+import logo9 from "@../../../public/assets/furnture8.jpg";
 export function TimelineDemo() {
   const t = useTranslations("about");
   const data = [
@@ -14,7 +22,7 @@ export function TimelineDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-bold  mb-8">
             {t("yearContent")}{" "}
           </p>
-          
+
           <div className="grid grid-cols-2 gap-4">
             <Image
               src={logo}
@@ -24,21 +32,21 @@ export function TimelineDemo() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src={logo}
+              src={logo2}
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src={logo}
+              src={logo2}
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src={logo}
+              src={logo3}
               alt="startup template"
               width={500}
               height={500}
@@ -55,7 +63,7 @@ export function TimelineDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-bold mb-6">
             {t("earlyYearsContent")}
           </p>
-          
+
           <div className="grid grid-cols-2 gap-4">
             <Image
               src={logo}
@@ -101,16 +109,16 @@ export function TimelineDemo() {
               ✅ {t("morelastWorkcontent")}
             </div>
             <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅ {t("morelastWorkcontent2")}
+              ✅ {t("morelastWorkcontent2")}
             </div>
             <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅ {t("morelastWorkcontent3")}
+              ✅ {t("morelastWorkcontent3")}
             </div>
             <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅ {t("morelastWorkcontent4")}
+              ✅ {t("morelastWorkcontent4")}
             </div>
             <div className="flex gap-2 font-bold items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-            ✅ {t("morelastWorkcontent5")}
+              ✅ {t("morelastWorkcontent5")}
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">

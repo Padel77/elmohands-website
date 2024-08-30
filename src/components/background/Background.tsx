@@ -35,7 +35,7 @@ export const Background: React.FC = () => {
           <div className="z-50  text-lg text-white">
             <p>{t("backgroundTitle")}</p>
             <h1 className="leading-loose  md:text-5xl text-3xl my-4  text-red-300  font-bold ">
-              <Highlight className="text-black dark:text-white px-2 ">
+              <Highlight className="text-black dark:text-white px-3 py-2 ">
                 <span className="text-white font-black">{t("elmohands")} </span>
                 {t("backgroundDescription")}
               </Highlight>

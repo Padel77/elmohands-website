@@ -4,6 +4,7 @@ import { TimelineDemo } from "@/components/home/PropertyCard";
 import { CardHoverEffectDemo } from "@/components/home/Properties";
 import RealAdversting from "@/components/home/RealAdversting";
 import { AppleCardsCarouselDemo } from "@/components/home/AppleCardsCarouselDemo";
+import ServiceApply from "@/components/home/ServiceApply";
 export default async function Home() {
   return (
     <>
@@ -14,6 +15,8 @@ export default async function Home() {
         <CardHoverEffectDemo />
         <TimelineDemo />
         <AppleCardsCarouselDemo />
+        <ServiceApply />
+
         {/*<BeAmbassador />
         <OurPartners partners={fetchedData?.partners} />
          */}

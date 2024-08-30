@@ -47,7 +47,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-xl md:text-4xl mb-4 text-black font-black dark:text-white max-w-4xl">
           {t("aboutUs")}
         </h2>
-        <p className="text-neutral-900 dark:text-neutral-300 text-md md:text-base max-w-md">
+        <p className="text-neutral-900 dark:text-neutral-300 text-md md:text-base font-bold max-w-md">
           {t("aboutElmohandas")}
         </p>
         <div className="flex items-center py-2 gap-4">
