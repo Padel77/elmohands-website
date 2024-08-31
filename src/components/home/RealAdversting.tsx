@@ -5,6 +5,7 @@ import residential from "@../../../public/assets/home/modern-residential.svg";
 import { ArrowUpRight, PhoneCall } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FaWhatsapp } from "react-icons/fa6";
+import Link from "next/link";
 
 const RealAdversting: React.FC = () => {
   const t = useTranslations("adversting");
@@ -30,15 +31,13 @@ const RealAdversting: React.FC = () => {
             {t("adverstingContent")}
           </h2>
           <div className="flex gap-4">
-            <button
-              onClick={handleCallClick}
-              className="flex items-center mt-4 px-2 py-2 gap-2 font-bold bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
+            <Link
+              href="tel:+9660575645308"
+              className="flex button items-center mt-4 px-2 py-2 gap-2 font-bold bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
             >
-              {t("contactNumber")}
-              <span className="ml-2">
-                <PhoneCall className="animate-ping" size={14} />
-              </span>
-            </button>
+              {t("conectWithUs")}
+              <PhoneCall className="animate-ping" size={16} />
+            </Link>
             <button
               onClick={handleWhatsappClick}
               className="flex items-center mt-4 px-2 text-center bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
