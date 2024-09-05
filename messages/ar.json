@@ -42,7 +42,7 @@
     "adverstingButton": "اشتري الان",
     "conectWithUs": "تواصل معنا",
     "contactNumber": " 5645308 (057)",
-    "ServiceApply" : "اطلب الخدمة الان",
+    "ServiceApply": "اطلب الخدمة الان",
     "whatsapp": "واتساب"
   },
   "howtobuy": {
@@ -53,9 +53,7 @@
     "checkproduct": "نعاين",
     "checkproductContent": "نعاين العفش وتقديم السعر",
     "rateproduct": "نقيم",
-    "rateproductContent": "نقوم بتقييم العفش وتحديد السعر النهائي",
-    "statusofProduct": "تحديد حالة الأثاث",
-    "statusofProductContent": "نقوم بتحديد حالة العفش ونقدم السعر ",
+    "rateproductContent": "نقوم بتقييم و بتحديد حالة العفش ونقدم السعر ",
     "buyproduct": "شراء",
     "buyproductContent": "نقوم بشراء العفش ونقوم بنقله وفكه"
   },

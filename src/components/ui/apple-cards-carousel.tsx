@@ -24,7 +24,9 @@ interface CarouselProps {
 }
 
 type Card = {
-  src: string;
+  Image: {
+    src: string;
+  };
   title: string;
   category: string;
   content: React.ReactNode;
@@ -127,7 +129,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="last:pr-[5%] md:last:pr-[33%]  rounded-3xl"
+                className="  rounded-3xl"
               >
                 {item}
               </motion.div>
@@ -264,7 +266,7 @@ export const Card = ({
           </motion.p>
         </div>
         <BlurImage
-          src={logo}
+          src={card.Image.src}
           alt={card.title}
           fill
           className="object-cover absolute z-10 inset-0"
