@@ -11,7 +11,10 @@ import logo5 from "@../../../public/assets/Used resturent.png";
 import logo6 from "@../../../public/assets/Used air.png";
 import logo7 from "@../../../public/assets/Used camera.png";
 import logo8 from "@../../../public/assets/Used equipment.png";
-import logo9 from "@../../../public/assets/furnture8.jpg";
+import logo9 from "@../../../public/assets/sleep.png";
+import logo10 from "@../../../public/assets/wood.png";
+import logo11 from "@../../../public/assets/sofra.png";
+import logo12 from "@../../../public/assets/ghraph.png";
 export function TimelineDemo() {
   const t = useTranslations("about");
   const data = [
@@ -123,28 +126,28 @@ export function TimelineDemo() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src={logo}
+              src={logo9}
               alt="hero template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src={logo}
+              src={logo10}
               alt="feature template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src={logo}
+              src={logo11}
               alt="bento template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src={logo}
+              src={logo12}
               alt="cards template"
               width={500}
               height={500}

@@ -8,7 +8,7 @@ import logo9 from "@../../../public/assets/furnture55.jpg";
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="max-w-5xl mx-auto px-4">
+    <div className="max-w-5xl mx-auto px-4 z-0">
       <HoverEffect items={projects} />
     </div>
   );

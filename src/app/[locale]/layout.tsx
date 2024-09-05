@@ -39,14 +39,6 @@ export default async function LocaleLayout({
 
   return (
     <html dir={locale === "ar" ? "rtl" : "ltr"} lang={locale}>
-      <Head>
-        <title>المهندس</title>
-        <meta
-          name="المهندس لشراء الاثاث المستعمل |المهندس لشرا الأثاث المستعمل"
-          content="نحن في المهندس نقدم خدمات شراء الأثاث المستعمل بأفضل الأسعار في الرياض. احصل على تقييم مجاني وسريع لأثاثك المستعمل الآن. اتصل بنا لتحقيق أفضل قيمة لأثاثك القديم"
-        />
-        <link rel="icon" href="/src/app/favicon.ico" />
-      </Head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
