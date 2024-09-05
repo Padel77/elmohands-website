@@ -8,6 +8,9 @@ import step2 from "@../../../public/assets/step2.png";
 import step3 from "@../../../public/assets/step3.png";
 import { useTranslations } from "next-intl";
 import UseSearchParamsHook from "@/hooks/UseSearchParamsHook";
+import Link from "next/link";
+import { PhoneCall } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 export function AppleCardsCarouselDemo() {
   const t = useTranslations("howtobuy");
   const { pathname } = UseSearchParamsHook();
@@ -53,13 +56,26 @@ export function AppleCardsCarouselDemo() {
 }
 
 const DummyContent = () => {
+  const t = useTranslations("howtobuy");
+  const handleWhatsappClick = () => {
+    if (navigator.userAgent.includes("WhatsApp")) {
+      // WhatsApp is installed
+      window.open(`whatsapp://send?phone=966575645308`);
+    } else {
+      // WhatsApp is not installed, open WhatsApp Web
+      window.open(
+        "https://api.whatsapp.com/send/?phone=966575645308&text&type=phone_number&app_absent=0",
+        "_blank"
+      );
+    }
+  };
   return (
     <>
       {[...new Array(1).fill(1)].map((_, index) => {
         return (
           <div
             key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+            className="bg-[#F5F5F7] dark:bg-neutral-800  rounded-3xl mb-2"
           >
             {/* <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
@@ -77,6 +93,21 @@ const DummyContent = () => {
               width="500"
               className="md:w-full md:h-full h-full w-full mx-auto object-contain"
             />
+            <div className="flex items-center justify-center gap-4">
+              <Link
+                href="tel:+9660575645308"
+                className="flex button items-center mt-4 px-2 py-2 gap-2 font-bold bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
+              >
+                {t("howtobuyNumber")}
+                <PhoneCall className="animate-ping" size={16} />
+              </Link>
+              <button
+                onClick={handleWhatsappClick}
+                className="flex button items-center mt-4 px-2 py-2 gap-2 font-bold bg-[#2D2D2D] text-white rounded hover:bg-blue-600"
+              >
+                <FaWhatsapp size={18} />
+              </button>
+            </div>
           </div>
         );
       })}
