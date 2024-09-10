@@ -1,7 +1,4 @@
 "use client";
-
-import { ArrowDown } from "lucide-react";
-import { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const responsive = {
