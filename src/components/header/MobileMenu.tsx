@@ -60,9 +60,9 @@ const MobileMenu: React.FC = () => {
         <div className="lg:hidden fixed  top-20 left-4 right-4 z-40 py-8 bg-black text-white drop-shadow-md">
           <div className="flex flex-col items-center space-y-6  font-bold">
           <GlobalLanguage className="lg:hidden flex" />
-            {NavItems.map((item, index) => (
+            {NavItems.map((item) => (
               <Link
-                key={index}
+                key={item.id}
                 onClick={() => setOpen(!open)}
                 className="font-medium text-base text-white"
                 href={item.href}

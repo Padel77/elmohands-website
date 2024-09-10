@@ -13,6 +13,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa6";
 
 interface TimelineEntry {
+  id: number;
   title: string;
   content: React.ReactNode;
 }
@@ -74,9 +75,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
-        {data.map((item, index) => (
+        {data.map((item) => (
           <div
-            key={index}
+            key={item.id}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">

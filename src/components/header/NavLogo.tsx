@@ -6,7 +6,7 @@ import Logo from "@../../../public/assets/elmohands__1.png";
 import Logo2 from "@../../../public/assets/elmohands__2.png";
 
 const NavLogo: React.FC = () => {
-  const { pathname, router } = UseSearchParamsHook();
+  const { pathname } = UseSearchParamsHook();
  
   return (
     <>

@@ -17,12 +17,14 @@ export function AppleCardsCarouselDemo() {
 
   const data = [
     {
+      id:1 ,
       category: t("checkproduct"),
       title: t("checkproductContent"),
       Image: step1,
       content: <DummyContent />,
     },
     {
+      id:2 ,
       category: t("rateproduct"),
       title: t("rateproductContent"),
       Image: step2,
@@ -30,6 +32,7 @@ export function AppleCardsCarouselDemo() {
     },
 
     {
+      id:3 ,
       category: t("buyproduct"),
       title: t("buyproductContent"),
       Image: step3,
@@ -38,7 +41,7 @@ export function AppleCardsCarouselDemo() {
   ];
 
   const cards = data.map((card, index) => (
-    <Card key={card.category} card={card} index={index} />
+    <Card key={card.id} card={card} index={index} />
   ));
 
   return (

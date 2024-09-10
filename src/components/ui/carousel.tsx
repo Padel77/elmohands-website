@@ -63,7 +63,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title }) => {
           }}
         >
           {items?.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={item.id}>
               <div className="flex bg-[#F8F8FC] flex-col   ">
                 <Image
                   width={300}
@@ -116,7 +116,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, title }) => {
                {item?.features && <div className="flex items-center justify-between text-sm gap-6 border-b mb-2 py-2">
                   {item?.features?.map((items: any, index: any) => (
                       <div
-                        key={index}
+                        key={item.id}
                         className="flex md:flex-row items-center justify-start gap-2 "
                       >
                         <Image

@@ -17,19 +17,7 @@ interface SliderProps {
 }
 
 const Slider: React.FC<SliderProps> = ({ items }) => {
-    const slideLeft = () => {
-        const slider = document.getElementById("slider1");
-        if (slider) {
-            slider.scrollLeft -= 235;
-        }
-    };
-
-    const slideRight = () => {
-        const slider = document.getElementById("slider1");
-        if (slider) {
-            slider.scrollLeft += 235;
-        }
-    };
+ 
 
     return (
         <div className="relative flex items-center">
@@ -38,8 +26,8 @@ const Slider: React.FC<SliderProps> = ({ items }) => {
                 id="slider1"
                 className="w-full flex overflow-x-scroll scrollbar-hide scroll-smooth"
             >
-                {items.map((item,index) => (
-                    <div key={index} className="p-2 flex-shrink-0 w-60">
+                {items.map((item) => (
+                    <div key={item.id} className="p-2 flex-shrink-0 w-60">
                         <Link href={`/`}>
                             <div className="bg-white rounded">
                                 <Image
@@ -63,14 +51,12 @@ const Slider: React.FC<SliderProps> = ({ items }) => {
             <Button
                 className="absolute left-0 p-2"
                 title="scroll left"
-                // onClick={slideLeft}
             >
                 <ArrowLeft />
             </Button>
             <Button
                 className="absolute right-0 p-2"
                 title="scroll right"
-                // onClick={slideRight}
             >
                 <ArrowRight />
             </Button>

@@ -8,7 +8,6 @@ import { useTranslations } from "next-intl";
 
 const CustomerService = () => {
   const { pathname } = UseSearchParamsHook();
-  const [showIcons, setShowIcons] = useState(false);
   const [showScrollUp, setShowScrollUp] = useState(false);
   const t = useTranslations("header");
   const handleWhatsappClick = () => {

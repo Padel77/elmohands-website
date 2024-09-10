@@ -36,9 +36,7 @@ interface DropProps {
 }
 
 const DropProject: React.FC<DropProps> = ({ projects = [] }) => {
-  const [open, setOpen] = useState<boolean>(false);
 
-  const handleToggle = () => setOpen(!open);
 
   return (
     <div>

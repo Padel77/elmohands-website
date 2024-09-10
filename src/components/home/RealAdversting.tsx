@@ -9,10 +9,7 @@ import Link from "next/link";
 
 const RealAdversting: React.FC = () => {
   const t = useTranslations("adversting");
-  const handleCallClick = () => {
-    console.log("Call clicked");
-    window.open("tel:+9660575645308");
-  };
+  
   const handleWhatsappClick = () => {
     if (navigator.userAgent.includes("WhatsApp")) {
       // WhatsApp is installed

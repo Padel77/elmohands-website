@@ -9,7 +9,6 @@ export const GlobalLanguage: React.FC<{ className: string }> = ({
   className,
 }) => {
   const { pathname, router } = UseSearchParamsHook();
-  const route = pathname.split("/")[2];
 
   const changeLanguage = () => {
     router.push(pathname === `/ar` ? `/en` : `/ar`);

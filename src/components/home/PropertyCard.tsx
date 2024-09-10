@@ -19,6 +19,7 @@ export function TimelineDemo() {
   const t = useTranslations("about");
   const data = [
     {
+      id: 1 ,
       title: t("yearTitle"),
       content: (
         <div>
@@ -60,6 +61,7 @@ export function TimelineDemo() {
       ),
     },
     {
+      id : 2,
       title: t("earlyYearTitle"),
       content: (
         <div>
@@ -101,6 +103,7 @@ export function TimelineDemo() {
       ),
     },
     {
+      id : 3,
       title: t("Changelog"),
       content: (
         <div>

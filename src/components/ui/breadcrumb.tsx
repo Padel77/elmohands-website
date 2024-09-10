@@ -1,7 +1,7 @@
 import React from "react";
 
 interface BreadcrumbProps {
-  items: { label: string; href: string }[];
+  items: {id : number, label: string; href: string }[];
   children?: React.ReactNode;
 }
 
@@ -9,8 +9,8 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, children }) => {
   return (
     <nav className="flex" aria-label="Breadcrumb">
       <ol className="flex items-center space-x-4">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-center">
+        {items.map((item,index) => (
+          <li key={item.id} className="flex items-center">
             <a href={item.href} className="text-gray-500 hover:text-gray-700">
               {item.label}
             </a>
