@@ -13,8 +13,10 @@ const inter = Tajawal({
   display: "swap",
   weight: "200",
 });
-
-export const metadata: Metadata = {
+export const metadata: Metadata & {
+  title: { template: string; default: string };
+  verification: { google: string };
+} = {
   title: {
     template:
       "%s |  المهندس لشراء الاثاث المستعمل |المهندس لشرا الأثاث المستعمل ",
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
   verification: {
     google: "zClMKi9biXYt2s7E6hRCHA9qzlG9ijHtoXB-C3cGoVM",
   },
+  // date: "2024-04-26T03:04:34+03:00", // Removed invalid property
 };
 
 export default async function LocaleLayout({
@@ -39,6 +42,15 @@ export default async function LocaleLayout({
 
   return (
     <html dir={locale === "ar" ? "rtl" : "ltr"} lang={locale}>
+      <Head>
+        <title>{metadata.title.default ?? "Default Title"}</title>
+        <meta name="description" content={metadata.description ?? ""} />
+        <meta
+          name="google-site-verification"
+          content={metadata.verification?.google ?? ""}
+        />
+        {/* Removed invalid date meta tag */}
+      </Head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}

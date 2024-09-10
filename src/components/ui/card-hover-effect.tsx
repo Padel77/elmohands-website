@@ -20,8 +20,6 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  console.log(items);
-
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
