@@ -10,15 +10,6 @@ const ServiceApply: React.FC = () => {
     console.log("Call clicked");
     window.open("tel:+9660575645308");
   };
-  const handleWhatsappClick = () => {
-    if (navigator.userAgent.includes("WhatsApp")) {
-      // WhatsApp is installed
-      window.open(`whatsapp://send?phone=9660575645308`);
-    } else {
-      // WhatsApp is not installed, open WhatsApp Web
-      window.open("https://wa.me/9660575645308", "_blank");
-    }
-  };
 
   return (
     <div id="hoverEffect" className=" ">

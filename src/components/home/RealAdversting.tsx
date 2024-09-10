@@ -16,10 +16,14 @@ const RealAdversting: React.FC = () => {
   const handleWhatsappClick = () => {
     if (navigator.userAgent.includes("WhatsApp")) {
       // WhatsApp is installed
-      window.open(`whatsapp://send?phone=9660575645308`);
+      window.open(`whatsapp://send?phone=966575645308`);
     } else {
       // WhatsApp is not installed, open WhatsApp Web
-      window.open("https://wa.me/9660575645308", "_blank");
+      window.open(
+        "https://api.whatsapp.com/send/?phone=966575645308&text&type=phone_number&app_absent=0",
+        "_blank",
+        "noopener noreferrer"
+      );
     }
   };
 

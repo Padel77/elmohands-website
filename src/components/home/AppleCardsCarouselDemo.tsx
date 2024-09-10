@@ -65,7 +65,8 @@ const DummyContent = () => {
       // WhatsApp is not installed, open WhatsApp Web
       window.open(
         "https://api.whatsapp.com/send/?phone=966575645308&text&type=phone_number&app_absent=0",
-        "_blank"
+        "_blank",
+        "noopener noreferrer"
       );
     }
   };
